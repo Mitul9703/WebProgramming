@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webstock.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class='webstock'>
+            <h1 style="color: white;">
+                Web<span style="color: orange;">Stock</span>
+                <h1>
+
+        </div>
+    </header>
+
+
+    <div id="main">
+        <div id="login-card">
+
+            <form id="login-form" onsubmit="return false">
+                <table>
+                    <tr>
+                        <th><input type="text" placeholder="Username" name="login" id="uname" /></th>
+                    </tr>
+                    <tr>
+                        <th><input type="password" placeholder="Password" name="password" id="passwd" /></th>
+                    </tr>
+                    <tr>
+                        <th><input id='submit-button' onclick="loginValidation()" type="submit" value="login" /></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p id="Error-msg"></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="signup.html" id="signup-link">Dont have an account? Sign up</a></th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var db = [
+            {
+                uname: "MitulKrishna",
+                passwd: "Mitulk"
+            },
+            {
+                uname: "user",
+                passwd: "user"
+            }
+
+        ]
+
+
+        function loginValidation() {
+            let uname = document.getElementById("uname").value;
+            let passwd = document.getElementById("passwd").value;
+            console.log(uname,passwd)
+            let flag = false;
+            for (let i = 0; i < db.length; i++) {
+                if (db[i].uname == uname && db[i].passwd == passwd) {
+                    flag = true;
+                }
+            }
+            if (!flag) {
+                let errorDoc = document.getElementById("Error-msg");
+                errorDoc.innerHTML = "Error username or password";
+            }
+            else {
+                window.location.href = "product.html";
+            }
+        }
+    </script>
+</body>
+
+</html>
