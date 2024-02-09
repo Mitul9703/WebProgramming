@@ -1,0 +1,38 @@
+.Purchase-Card {
+    margin: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+
+}
+
+.Purchase-Card {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.Purchase-pic {
+    flex: 1;
+    padding: 20px;
+    padding-left: 100px;
+    width: 30%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.Purchase-info {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+
+}
+
+p {
+    font-size: 20px
+}

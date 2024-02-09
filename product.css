@@ -1,0 +1,41 @@
+
+
+#Mainpage {
+    display: grid;      
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    
+}
+.Product-Card {
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 2px 0px ;
+    
+}
+
+.Product-pic {
+    flex: 1;
+    padding: 20px;
+    padding-left: 100px;
+    width: 30%;
+}
+
+img {
+    height: 80%;
+    width: 80%;
+}
+
+.Product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+
+}
+
+p {
+    font-size: 20px
+}

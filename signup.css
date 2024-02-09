@@ -1,0 +1,69 @@
+#main {
+    display: flex;
+    justify-content: center;
+
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login-card {
+    border-style: none;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-top: 10%;
+    padding: 30px;
+    box-shadow:  0px 0px 2px 0px;
+
+}
+#login-form {
+    
+}
+
+
+input {
+    margin: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-width: 1px;
+    padding-left: 5px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+input:hover {
+    background-color: rgb(250, 250, 250);
+}
+input:focus {
+    background-color:rgb(238, 238, 238) ;
+}
+
+#submit-button {
+    background-color: orange;
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+    border-width: none;
+    border-style: none;
+}
+
+#submit-button:hover{
+    background-color: rgb(255, 145, 0);
+}
+
+
+
+#signup-link {
+    color: rgb(255, 129, 12);
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#signup-link:hover {
+    color: black;
+}
